@@ -1,4 +1,4 @@
-// File: /home/nokdu/votesite/src/app/develop/layout.js
+// File: C:\Users\Administrator\Desktop\Nagok-Website\src\app\develop\layout.js
 import * as entry from '../../../../src/app/develop/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

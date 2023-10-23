@@ -1,4 +1,4 @@
-// File: /home/nokdu/votesite/src/app/vote/page.js
+// File: C:\Users\Administrator\Desktop\Nagok-Website\src\app\vote\page.js
 import * as entry from '../../../../src/app/vote/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

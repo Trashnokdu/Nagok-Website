@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/nokdu/votesite/src/app/develop/layout":["static/media/c9a5bc6a7c948fb0-s.p.woff2"],"/home/nokdu/votesite/src/app/loading/layout":["static/media/c9a5bc6a7c948fb0-s.p.woff2"],"/home/nokdu/votesite/src/app/theend/layout":["static/media/c9a5bc6a7c948fb0-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}';
