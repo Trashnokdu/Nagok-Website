@@ -1,0 +1,75 @@
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+  }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+  .loading {
+  animation: spin 1s linear infinite;
+  }
+
+  .floatingText {
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  }
+
+  @font-face {
+  font-family: Pretendard-Medium;
+  src: url('/Pretendard-Medium.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: Pretendard-ExtraBold;
+  src: url('/Pretendard-ExtraBold.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: Pretendard-Regular;
+  src: url('/Pretendard-Regular.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: Pretendard-SemiBold;
+  src: url('/Pretendard-SemiBold.otf')  format('truetype');
+}
+html, body, #__next {
+  height: 100%;
+}
+header {
+    font-family: Pretendard-Medium;
+    overflow-x: hidden;
+} 
+
+main {
+  font-family: Pretendard-ExtraBold;
+  overflow-x: hidden;
+} 
+.divtitle {
+  font-family: Pretendard-ExtraBold;
+}
+
+* {
+  overflow-x: hidden;
+}
+
+.title2 {
+  font-family: Pretendard-Regular;
+}
+
+.title3 {
+  font-family: Pretendard-SemiBold;
+}
+
+.divbutton:active {
+  background-color: gray;
+}
