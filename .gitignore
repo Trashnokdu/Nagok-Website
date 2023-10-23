@@ -17,6 +17,7 @@ yarn-error.log*
 .env*.local
 
 # vercel
+/.next
 .vercel
 
 # typescript
