@@ -37,7 +37,7 @@ export default function Home() {
                 <h1 style={{fontSize:"8vw", marginTop:"70px"}}>10월 27일, 우리 그때 만나요!</h1>
                 <h1 style={{fontSize:"5vw", marginTop:"14px"}}>복면가왕 | 2023.10.27</h1>
                 <div style={{textAlign:"center"}}>
-                <a className="card" style={{marginLeft:"12px", maxWidth:"95%", marginTop: "80px", backgroundColor: '#FFD359', color: '#484848', height:"70px", width:"auto"}} href='/vote'>
+                <a className="card" style={{marginLeft:"12px", maxWidth:"95%", marginTop: "80px", backgroundColor: '#FFD359', color: '#484848', height:"70px", width:"auto"}} href='https://youtu.be/Ppb2lOhLSjA'>
                 <p className="position-absolute top-50 start-50 translate-middle" style={{fontSize:"21px"}}>투표방법 미리보기 →</p>
                 </a>
                 <a className="card" style={{marginLeft:"12px", maxWidth:"95%", marginTop: "15px", backgroundColor: '#484848', color: '#FFD359', height:"70px", width:"auto"}} href='/develop'>
