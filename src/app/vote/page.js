@@ -10,6 +10,7 @@ export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [isEnd, setEnd] = useState(false);
     const [name, setName] = useState('');
+    const [song, setSong] = useState('');
     const [number, setNumber] = useState('');
     const [socket, setSocket] = useState(null);
     useEffect(() => {
@@ -26,6 +27,9 @@ export default function Home() {
             window.location.href = '/end'
         }
       });
+      socket.on("NowSong", (data) => {
+        setSong(data)
+      })
       socket.on("Voteopen", (data) => {
         if (data == false){
             window.location.href = '/loading'
@@ -88,8 +92,8 @@ export default function Home() {
                 </a>
             </header>
         <div className="position-absolute top-50 start-50 translate-middle" style={{textAlign:"center", width:"100%"}}>
-            <p style={{fontSize:"1.4rem"}}>당신의 가수는 누구인가요?</p>
-            <p style={{fontSize:"3.5rem"}}>{name}</p>
+            <p style={{fontSize:"1.4rem"}}>후보 {number} | {song}</p>
+            <p style={{fontSize:"3rem"}}>{name}</p>
             <button className="card divbutton" style={{marginLeft:"30px", marginRight:"30px", marginTop: "45px", marginBottom: "15px", width: "85%", height: "110px", backgroundColor: 'white', textDecoration:"none", borderRadius:"20px", border:"none", color:"white", boxShadow:"0px 0px 10px rgba(0, 0, 0, 0.12)", display:'flex', alignItems:'center', justifyContent:'center'}} onClick={vote}>
                     <div style={{borderRadius:"10px", height: "150px"}}>
                         <div className="position-absolute translate-middle-y title3" style={{top: "35%", fontSize:"14px", color:"#808080", display: 'inline-block', left: '0', marginLeft:"35px", textDecoration: "none"}}>너무 마음에 들었어요!!!!</div>
