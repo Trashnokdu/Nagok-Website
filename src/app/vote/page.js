@@ -40,7 +40,7 @@ export default function Home() {
       });
       socket.on("Votenumber", (data) => {
         setNumber(data);
-        if (localStorage.getItem(`votetest${data}`)) {
+        if (localStorage.getItem(`vote${data}`)) {
           window.location.href = '/sucess'
         }
       });
@@ -56,22 +56,22 @@ export default function Home() {
      };
     }, []);
     function vote(choice) {
-        if (localStorage.getItem(`votetest${number}`)) {
+        if (localStorage.getItem(`vote${number}`)) {
           alert('이미 투표하셨습니다');
           window.location.href = '/sucess'   
           return;
         }
-        localStorage.setItem(`votetest${number}`, 'true');
+        localStorage.setItem(`vote${number}`, 'true');
         socket.emit('vote');
         window.location.href = '/sucess'        
       }  
     function skip(){
-      if (localStorage.getItem(`votetest${number}`)) {
+      if (localStorage.getItem(`vote${number}`)) {
         alert('이미 투표하셨습니다');
         window.location.href = '/sucess'   
         return;
       }
-      localStorage.setItem(`votetest${number}`, 'true');
+      localStorage.setItem(`vote${number}`, 'true');
       window.location.href = '/sucess'
     } 
    useEffect(() => {
