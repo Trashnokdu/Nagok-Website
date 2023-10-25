@@ -45,7 +45,7 @@ export default function Home() {
     });
     socket.on("Votenumber", (data) => {
       setNumber(data);
-      if (!localStorage.getItem(`votetest${data}`)) {
+      if (!localStorage.getItem(`vote${data}`)) {
         window.location.href = '/vote'
       }
     });
