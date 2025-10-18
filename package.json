@@ -21,6 +21,6 @@
     "utf-8-validate": "^6.0.3"
   },
   "devDependencies": {
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "15.5.6"
   }
 }
